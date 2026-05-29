@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+  /* Backgrounds */
+  --bg-main: #12131A;        /* Fondo principal de la página */
+  --bg-card: #1C1F2A;        /* Fondo de cards, textarea y botón dark mode */
+  
+  /* Text */
+  --text-light: #F2F2F7;     /* Texto principal en modo oscuro */
+  --text-muted: #A1A1AA;     /* Texto secundario, descripciones o labels */
+  
+  /* Accents */
+  --accent-blue: #3B82F6;    /* Botones primarios, links destacados */
+  --accent-green: #22C55E;   /* Éxito, confirmaciones */
+  --accent-red: #EF4444;     /* Errores, alertas */
+  --accent-yellow: #FACC15;  /* Advertencias, highlights */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-main);
+    padding: 10px;
+    color: var(--text-light);
+}
+
+#dark-mode {
+    background-color:  var(--bg-card);
+    color: var(--text-light);
+    border: none;
+    cursor: pointer;
+}
