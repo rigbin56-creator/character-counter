@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+/* paleta de colores */
+:root {
+  /* Backgrounds */
+  --bg-main: #12131A;        /* Fondo principal de la página */
+  --bg-card: #1C1F2A;        /* Fondo de cards, textarea y botón dark mode */
+  
+  /* Text */
+  --text-light: #F2F2F7;     /* Texto principal en modo oscuro */
+  --text-muted: #A1A1AA;     /* Texto secundario, descripciones o labels */
+  
+  /* Accents */
+  --accent-blue: #3B82F6;    /* Botones primarios, links destacados */
+  --accent-green: #22C55E;   /* Éxito, confirmaciones */
+  --accent-red: #EF4444;     /* Errores, alertas */
+  --accent-yellow: #FACC15;  /* Advertencias, highlights */
+
+  /* colores de las cards */
+  --purple:#C99DFF;
+    --orange:#FFB21E;
+    --coral:#FF8A65;
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+}
+
+/* logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* dark mode button */
+#dark-mode {
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.dark-mode-icon {
+    width:50px;
+    height: 50px;
+}
+
+
+/* -------------------- */
+
+/*  main --> SECTION  ↓↓ */
+.inputs-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-main);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.inputs-zone h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.inputs-zone textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: var(--bg-card);
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    resize: none;
+}
+
+.inputs-zone .checkbox {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.chkbox {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    background-color: #1C1F2A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-color: aqua
+}
+
+label{
+    display: inline-block;
+    align-items:center;
+    gap:8px;
+    color:var(--text-secondary);
+}
+
+/* -------------------- */
+
+/* cards results */
+
+.result-zone {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.result-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    color: var(--bg-main);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+.result-card p {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0;
+}
+
+.total-value-result {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--bg-main);
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-total-characters {
+    background-color: var(--purple);
+    width: 100%;
+    height: 178px;
+}
+
+.card-word-count {
+    background-color: var(--orange);
+    width: 100%;
+    height: 178px;
+}
+
+.card-sentnence-count {
+    background-color: var(--coral);
+    width: 100%;
+    height: 178px;
+}
