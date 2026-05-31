@@ -121,18 +121,17 @@ textarea {
     background: none;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     padding: 5px 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-color: aqua
 }
 
 label{
     display: inline-block;
     align-items:center;
     gap:8px;
-    color:var(--text-secondary);
+    color: var(--text-muted);
+    cursor: pointer;
 }
 
 /* -------------------- */
@@ -143,7 +142,10 @@ label{
     display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    font-size: 16px;
+    padding: 26px;
 }
 
 .result-card {
@@ -153,8 +155,6 @@ label{
     justify-content: left;
     color: var(--bg-main);
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
     border-radius: 22px;
@@ -196,3 +196,77 @@ label{
     height: 178px;
 }
 
+/* --------------------- */
+
+/* letter density */
+
+.letter-density-zone{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    height: 250px;
+    font-size: 16px;
+    padding: 26px;
+}
+
+.density-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.letter-density-zone h3{
+    color: var(--text-light);
+}
+
+/* letra */
+.letter{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: left;
+
+
+}
+/* barra */
+.bar{
+    width: 82%;
+    height:12px;
+    background: var(--bg-card); 
+    border-radius: 250px;
+}
+
+/* barra rellena */
+.fill{
+    width:16.06%;
+    height:100%;
+    background:#D19BFF;
+    border-radius:999px;
+}
+
+/* stats */
+.stats{
+    color: var(--text-muted);  
+    font-size: 12px;
+}
+
+/* button */
+
+.letter-density-zone button {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: left;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.letter-density-zone button:hover {
+    color: var(--text-light);
+    transition-duration: 0.3s;
+}
