@@ -8,6 +8,7 @@ body {
     font-family: 'Inter', sans-serif;
     width:min(1200px,90%);
     margin:auto;
+    background-color: var(--bg-main);
 }
 
 /* paleta de colores */
@@ -38,8 +39,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
-    color: #fff;
+    background-color: var(--bg-main);
+    color: var(--text-muted);
     padding: 10px;
 }
 
@@ -50,22 +51,28 @@ header {
 }
 
 .logo-container img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
 }
 
 /* dark mode button */
-#dark-mode {
-    border: none;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
+header button img {
+    width: 40px;
+    height: 40px;
 }
 
-.dark-mode-icon {
-    width:50px;
-    height: 50px;
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#dark-mode {
+    background-color:  var(--bg-card);
+    border-color: var(--bg-card);
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 
@@ -78,27 +85,28 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--bg-main);
-    color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .inputs-zone h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: var(--text-light);
 }
 
-.inputs-zone textarea {
+textarea {
     width: 100%;
-    height: 200px;
+    height: 250px;
     font-size: 16px;
-    padding: 10px;
+    padding: 26px;
+    margin-top: 50px;
     margin-bottom: 20px;
     background-color: var(--bg-card);
-    color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: var(--text-muted);
+    border-radius: 14px;
+    border-color: var(--text-muted);
     resize: none;
+      font-family: 'Inter', sans-serif;
 }
 
 .inputs-zone .checkbox {
@@ -110,8 +118,7 @@ header {
 .chkbox {
     margin-left: 50px;
     margin-bottom: 10px;
-    background-color: #1C1F2A;
-    color: #fff;
+    background: none;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -145,11 +152,12 @@ label{
     align-items: left;
     justify-content: left;
     color: var(--bg-main);
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
+    border-radius: 22px;
 }
 
 .result-card p {
@@ -187,3 +195,4 @@ label{
     width: 100%;
     height: 178px;
 }
+
