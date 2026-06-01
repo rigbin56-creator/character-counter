@@ -127,7 +127,7 @@ header button img {
 textarea {
     width: 100%;
     height: 260px;
-    font-size: 16px;
+    font-size: 27px;
     padding: 26px;
     margin-top: 50px;
     margin-bottom: 0;
@@ -135,7 +135,7 @@ textarea {
     color: var(--text-muted);
     border-radius: 14px;
     border-color: var(--text-muted);
-    resize: none;
+    resize: vertical;
     font-family: 'Inter', sans-serif;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
