@@ -86,13 +86,9 @@ Estas dificultades se resolvieron realizando pruebas, reorganizando contenedores
 
 ### Vista general
 
-Agregar aquí una captura de pantalla del proyecto terminado.
-
 ![Captura principal](./assets/readme-photos/captura-principal.png)
 
 ### Sección Letter Density
-
-Agregar aquí una captura de la sección de densidad de letras.
 
 ![Captura Letter Density](./assets/readme-photos/captura-letter-density.png)
 
