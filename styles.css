@@ -50,16 +50,21 @@ header {
     align-items: center;
 }
 
+h1 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
 .logo-container img {
     width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    height: auto;
+    margin-right: 15px;
 }
 
 /* dark mode button */
 header button img {
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
 }
 
 .logo-container {
@@ -69,10 +74,15 @@ header button img {
 }
 
 #dark-mode {
+    width: 50px;
+    height: 50px;
     background-color:  var(--bg-card);
-    border-color: var(--bg-card);
+    border: none;
     border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -90,8 +100,8 @@ header button img {
 }
 
 .inputs-zone h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 60px;
+    text-align: center;
     color: var(--text-light);
 }
 
@@ -113,6 +123,7 @@ header button img {
     color: var(--text-muted);
 }
 
+/* text area */
 textarea {
     width: 100%;
     height: 260px;
@@ -121,13 +132,19 @@ textarea {
     margin-top: 50px;
     margin-bottom: 0;
     background-color: var(--bg-card);
-    color: var(--text-light);
+    color: var(--text-muted);
     border-radius: 14px;
     border-color: var(--text-muted);
     resize: none;
     font-family: 'Inter', sans-serif;
 }
 
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+}
+
+/* checkbox */
 .chkbox {
     appearance: none;
     width: 14px;
@@ -138,6 +155,11 @@ textarea {
     margin-right: 5px;
 }
 
+.chkbox:checked {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-blue);
+}
+
 label{
     display: flex;
     align-items: center;    
@@ -145,7 +167,6 @@ label{
     color: var(--text-muted);
     cursor: pointer;
 }
-
 
 /* -------------------- */
 
@@ -210,7 +231,7 @@ label{
 }
 
 /* coral card(sentence count) */
-.card-sentnence-count {
+.card-sentence-count {
     background-color: var(--coral);
     width: 100%;
     height:  auto;
@@ -288,6 +309,6 @@ label{
 }
 
 .letter-density-zone button:hover {
-    color: var(--accent-green);
+    color: var(--accent-blue);
     transition-duration: 0.3s;
 }
