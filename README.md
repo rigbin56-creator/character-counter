@@ -92,6 +92,7 @@ Estas dificultades se resolvieron realizando pruebas, reorganizando contenedores
 
 ![Captura Letter Density](./assets/readme-photos/captura-letter-density.png)
 
+link para ver la pagina: https://rigbin56-creator.github.io/character-counter/
 ---
 
 ## Repositorio
